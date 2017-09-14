@@ -37,7 +37,7 @@ services:
     ports:
       - "7050:7050"
     volumes:
-    - ./e2e_cli/channel-artifacts/orderer.genesis.block:/var/hyperledger/orderer/genesis.block
+    - ./e2e_cli/channel-artifacts/genesis.block:/var/hyperledger/orderer/genesis.block
     - ./e2e_cli/crypto-config/ordererOrganizations/example.com/orderers/orderer.example.com/msp:/var/hyperledger/orderer/msp
     - ./e2e_cli/crypto-config/ordererOrganizations/example.com/orderers/orderer.example.com/tls/:/var/hyperledger/orderer/tls
     command: orderer start
